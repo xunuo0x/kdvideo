@@ -1,0 +1,12 @@
+{
+	"miniprogramRoot": "miniprogram/",
+	"pluginRoot": "plugin/",
+	"compileType": "plugin",
+	"setting": {
+		"newFeature": true
+	},
+	"appid": "wx4f04ab9d8925d601",
+	"projectname": "kdvideo",
+	"libVersion": "2.0.9",
+	"condition": {}
+}

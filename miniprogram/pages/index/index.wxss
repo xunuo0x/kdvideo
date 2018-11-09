@@ -1,0 +1,22 @@
+.kdvideos {
+  border-bottom: 2rpx solid #eee;
+}
+video {
+  width: 100%;
+}
+.owner {
+  color: #9d9d9d;
+  font-size: 24rpx;
+  line-height: 24rpx;
+  margin: 16rpx 24rpx;
+}
+.title {
+  font-size: 32rpx;
+  margin: 16rpx 24rpx;
+  overflow : hidden;
+  color: #333;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}

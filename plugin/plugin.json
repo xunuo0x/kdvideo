@@ -1,0 +1,6 @@
+{
+  "publicComponents": {
+    "kdvideo": "components/kdvideo/kdvideo"
+  },
+  "main": "index.js"
+}

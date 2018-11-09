@@ -1,0 +1,14 @@
+<!--currentVideoId为当前播放视频Id-->
+<view class="kdvideo-wrapper">
+  <slot name="before"></slot>
+  <view wx:if="{{videoInfo.videoId != currentVideoId}}" bindtap="play" class="poster">
+    <view class="poster-mask"></view>
+    <image class="video-poster" mode="{{posterMode}}" src="{{videoInfo.poster}}"></image>
+    <!-- 播放按钮 -->
+    <image class="play-btn" src="http://sqimg.qq.com/qq_product_operations/kan/images/play.png?_bid=2378"></image>
+    <view class="play-time">{{playTime}}</view>
+  </view>
+  <video id="{{videoInfo.videoId}}" wx:if="{{videoInfo.videoId == currentVideoId}}" bindplay="videoPlay" bindfullscreenchange="fullscreenchange" bindended="ended" bindpause="pause" autoplay="true" src="{{videoInfo.videoUrl}}" objectFit="{{videoObjectFit}}" duration="{{videoInfo.duration}}" show-center-play-btn="{{showCenterBtn}}" class="video" data-video-id="{{currentVideoId}}">
+  </video>
+  <slot name="after"></slot>
+</view>
